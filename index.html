@@ -5,8 +5,8 @@
 	<title>sStory</title>
 
   <script src="lib/js/3rdparty.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4" type="text/javascript"></script>  
-  
+  <script src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4" type="text/javascript"></script>
+
   <script src="lib/js/sstory.js" type="text/javascript" charset="utf-8"></script>
 
   <link rel="stylesheet" href="lib/styles/style.css" type="text/css" media="screen" title="Primary Stylesheet" charset="utf-8">
@@ -16,8 +16,8 @@
 <nav id="header">
   <div id="header-content" class="show-front">
     <div id="header-front">
-      <h1 id="title">sStory</h1>
-      <h4 id="subtitle">Making beautiful stories easy</h4>
+      <h1 id="title">Technology&Chlamydia</h1>
+      <h4 id="subtitle">How technology has shaped the way we test for Chlamydia.</h4>
     </div>
 
     <ul id="navigation">
@@ -33,45 +33,61 @@
 <script type="text/javascript" charset="utf-8">
 var story_list = [
   {
-    photoUrl: 'https://farm8.staticflickr.com/7028/6494490891_e1d2de1149_b.jpg'
-    ,type: 'photoBigText'
-    ,title: 'Making beautiful stories easy'
+    photoUrl: 'technology.jpg'
+    ,type: 'photoCaption'
+    ,title: ''
+		,caption: '<p>Chlamydia is one of the most prevalent STIs, accounting for <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/559993/hpr2216_stis_CRRCTD4.pdf ">46% of new STI diagnoses in 2015 </a>. It is a bacteria which is easily passed from one person to another through sexual contact. It is an issue because in 70 – 80% of cases in has no symptoms, and if left untreated can lead to infertility in both woman and men. Luckily it is easily treated with antibiotics once you know you have it, which is why the testing process for chlamydia is so important and why revolutions in testing process and accessibility due to technology are so crucial.</p>'
+
   }
-  ,{
-    type: 'locationSinglePlace'
-    ,address: "1600 Pennsylvania Ave NW  Washington, DC"
-    ,caption: "Easily make maps- just provide an address!"
-    ,title: 'A map of the White House'
-  }
-  ,{
-    type: 'photoCaption'
-    ,photoUrl: 'https://farm8.staticflickr.com/7030/6751144021_d9b328e737_b.jpg'
-    ,title: 'Full-screen media automatically'
-    ,caption: '<h3>Captions too!</h3><p><a href="http://ejfox.github.io/sStory/documentation/">Read about more sStory features in the documentation</a></p><p>Lorem ipsum <em>dolor sit</em> amet. Include styled <span style="color: red">HTML</span>!'
-  }
+	,{
+		type: 'text'
+		,html: '<h2>The Rise</h2><p>Chlamydia diagnoses rates rose drastically in 2006 and have never fallen back down, this isn’t because we are in the midst of an epidemic, but rather that more people are getting tested for chlamydia than ever before. If more people are tested, then there will be more chlamydia diagnoses, which means more people can be treated for the STI, which means eventually less people will test positive for chlamydia.</p>'
+	}
+	,{
+		type: 'timelineVerite'
+		,embedCode: "<iframe src='https://public.tableau.com/views/ChlamydiaDiagnoses2006to2015/Sheet1?:embed=y&:display_count=yes&:toolbar=no&:showVizHome=no' width='100%' height='800' frameborder='0'></iframe>"
+	}
+	,{
+		type: 'text'
+		,html: '<h2>Why are more people getting tested?</h2><p>Jane Nicholls, a sexual health consultant in Cardiff, puts the rise in diagnoses down to the new non-invasive testing methods which were first implemented in 2006. The kits, featured below, can be processed in batch using a machine – proving more cost effective than than the old kits which required each sample to be grown in a laboratory. The new kits also provide a more accurate result in a shorter time. </p>'
+	}
+	,{
+		type: 'photoCaption'
+		,photoUrl: 'test.png'
+		,title: ''
+		,caption: '<h3>The new testings kits used in clinics and postal services.</h3><p>The data visualisation shows the percentage likelyhood a test will return positive.<br> <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/534476/2014_NCSPDataTables_version1.0.pdf ">Source, 2014. </a> </p>'
+	}
+	,{
+		type: 'videoYoutube'
+		,embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/zQqcumEwpn8" frameborder="0" allowfullscreen></iframe>'
+	}
+	,{
+		type: 'text'
+		,html: '<h2>The Online Revolution</h2><p>The new kits allow patients to test themselves for Chlamydia. This has begun a revolution in how the nation looks after their own sexual health. Depending on your postcode, if you are aged between 15 and 24 you can order a testing kit online and have it sent to you discretely in the post. This allows discrete testing for Chlamydia, which means some people who might be put off going to the clinic can still get tested in their own homes. </p>'
+	}
+	,{
+		type: 'timelineVerite'
+		,embedCode: "<iframe src='https://public.tableau.com/views/ChlamydiaRatesofInfection2015/Sheet1?:embed=y&:display_count=no&:toolbar=no&:showVizHome=no' width='100%' height='800' frameborder='0'></iframe>"
+	}
+	,{
+		type: 'photoCaption'
+		,photoUrl: 'emptyclinic.jpg'
+		,title: ''
+		,caption: '<h3>So why keep clinics?</h3><p>It is important to recognise the importance of clinics even with home testing. Zoë Couzens, the lead for Sexual Health in Public Health Wales, stated that there is a concern with home testing kits that someone who tests positive still gets the same amount of support upon receiving their result as somebody who got tested at a clinic.<br><br>If you received a positive result, you would still need to attend the clinic to receive treatment. The clinic also offers other tests for different STIs and allows the patient to talk directly about any concerns with a medical professional. Jane Nicholls highlighted that often the clinic asks other questions which help health professionals to provide support and education. The events that lead to a patients getting tested are often complicated and so having the support of a medical professional to talk to often provides comfort and does more than simply curing the STI - it promotes healthy sexual relationships.</p>'
+	}
+	,{
+		type: 'text'
+		,html: '<h2>Tackling The Stigma</h2><p>One of the concerns as to why more people don’t get tested is because of the stigma behind STIs. Zoë Couzens stated: <br><br><i>‘You get yourself tested for other things, we need to normalise sexual health and testing for STIs. Why shouldn’t you have a sex life, but have it as safely as you possibly can? Build in testing as a regular thing. Use condoms, it’s not an issue. Doesn’t suit everyone, so if you don’t get yourself tested regularly.’ </i><br><br> Across large parts of England testing kits are freely available in public spaces, like pharmacies, which you can pick up for free without having to talk to anyone. This process means that people are more likely to get tested, as shown by the rising diagnoses rates. The prevalence of testing kits in normal community spaces also helps to spread awareness and normalise sexual health.<br><br> Aysha Haththotuwegama, the President of a Sexual Health Awareness Group for students believes that:<br><br><i> ‘talking about sexual health more and making it more of a normal thing for people to go and get tested is the key to tackling the stigma associated with sexual health.’ </i><br><br>By tackling the stigma, you help normalise the testing process and so more people will get tested on a regular basis.<br></p>'
+	}
+	,{
+		type: 'photoCaption'
+		,photoUrl: 'clinic.jpg'
+		,title: ''
+		,caption: '<h3>What does the future hold?</h3><p>Home testing kits are not freely available across the whole of the UK, in many areas if you want to be tested for STIs you will still have to go to your GP or to a sexual health clinic. Public Health Wales does not offer home testing kits across the country yet. Zoë Couzens, the Sexual Health Lead for Public Health Wales explained that there are concerns about making sure you are spending money testing the people who are most likely to test positive. Such a large scheme would also require a lot of funding which is not yet secured. Hopefully in the future home testing kits will be available throughout the UK. <br><br> It perhaps seems that it is a cultural shift that is needed and not just new schemes. In talking to professionals and organisations who deal with sexual health, it is clear that as a population we need to normalise looking after sexual health. Going to a clinic to get tested should be normal practice each time you have unprotected sex with a different partner. If you go doctors for other check ups regularly, why shouldn’t also for your sexual health?</p>'
+	}
   ,{
     type: 'photoMulti'
-    ,photoUrlArray: ['http://37.media.tumblr.com/76cd2f0e146ac4d6251bd9ff28eb8307/tumblr_ms91cgSwmX1qcn8pro1_1280.jpg', 'http://24.media.tumblr.com/9a5c41e468022c91dfd201053d1a099b/tumblr_ms91cgSwmX1qcn8pro2_1280.jpg', 'http://24.media.tumblr.com/5aeb959fd9c416f18e80d27b84384f1b/tumblr_ms91cgSwmX1qcn8pro3_1280.jpg']
-  }
-  ,{
-    type: 'videoYoutube'
-    ,embedCode: '<iframe width="640" height="480" src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0" frameborder="0" allowfullscreen></iframe>'
-  }
-  ,{
-    type: 'videoVimeo'
-    ,embedCode: '<iframe src="http://player.vimeo.com/video/35912908?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/35912908">FACETURE</a> from <a href="http://vimeo.com/user9669590">Phil Cuttance</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
-  }
-  ,{
-    type: 'soundSoundcloud'
-    ,embedCode: '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125682501&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>'
-  }
-  ,{
-    type: 'timelineVerite'
-    ,embedCode: "<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0ApAkxBfw1JT4dFVxOEk0aGRxbk9URE9yeDJKMXNIS3c&font=Bevan-PotanoSans&maptype=toner&lang=en&start_at_slide=1&height=650' width='100%' height='650' frameborder='0'></iframe>"
-  }
-  ,{
-    type: 'text'
-    ,html: '<h2>sStory</h2><p>sStory is being continually developed by me, <a href="http://ejfox.com">EJ Fox</a>. If you have any suggestions, comments, or Pull Requests, please let me know <a href="https://github.com/ejfox/sStory/issues?state=open">on GitHub</a>. I hope you find sStory useful!</p>'
+    ,photoUrlArray: ['1px.png','femaletest.jpg', 'maletest.jpg']
   }
 ]
 
